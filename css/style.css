@@ -1,0 +1,22 @@
+h2{
+    cursor: pointer;
+}
+.card-group{
+    display: none;
+}
+.container h1{
+    display: none;
+}
+.card-footer h5{
+    text-align: justify;font-size: 0.8rem;line-height: 2
+}
+.card{
+    border: 1px solid #ccc!important;
+    cursor: pointer;
+    transition: all 200ms linear;
+    width: 75%;
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}

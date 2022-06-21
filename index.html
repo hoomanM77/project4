@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="welcome to my first website">
+    <meta name="keyword" content="HTML,CSS,PHP,developer">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        @media (max-width: 768px) {
+            .keyCodeShow{
+                margin-top: 36rem;
+            }
+            .main-content{
+                width: 93vw!important;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="vw-100 vh-100 d-flex justify-content-center align-items-center flex-column main-content">
+    <h2 id="title" class="bg-dark text-white p-3 rounded-pill text-decoration-underline text-capitalize text-center">Press any key on the keyboard to get the javascript event keycode info
+    </h2>
+    <input  id="mobileShow" onkeydown="show_details()" type="text" value="" class="form-control d-block d-md-none w-50 mt-4" placeholder="Enter any key...">
+    <div class="container align-items-end ">
+        <div class="row">
+            <h1 class="text-center display-1 keyCodeShow" style="font-size: 13rem">
+                65
+            </h1>
+            <div class="card-group col ">
+                <div class="row">
+                    <div class="col d-flex flex-column flex-md-row align-items-center align-items-md-stretch">
+                        <div class="d-flex justify-content-center">
+                            <input id="mobileShow2" onkeydown="show_details()" type="text" class="form-control d-block d-md-none w-75 w-md-50 mb-4" placeholder="Enter any key...">
+                        </div>
+                        <div class="card mb-3 me-md-4 ">
+                            <h5 class="card-header bg-warning text-center">
+                                event.key
+                            </h5>
+                            <p id="key" class="bg-white text-center py-4 h6">
+                                a
+                            </p>
+                            <div class="card-footer h-100">
+                                <h5  >
+                                    The value of the key pressed. Accounts for modifiers keys that return CAPS and alternate chars.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="card mb-3 me-md-4 ">
+                            <h5 class="card-header bg-warning text-center">
+                                event.location
+                            </h5>
+                            <p id="location" class="bg-white text-center py-4 h6">
+                                General keys
+                            </p>
+                            <div class="card-footer h-100">
+                                <h5 >
+                                    Some keys exist more than once on your keyboard. This provides the location of the key pressed. Try it with both shifts.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="card mb-3 me-md-4">
+                            <h5 class="card-header bg-warning text-center">
+                                event.which
+                            </h5>
+                            <p id="keycode" class="bg-white text-center py-4 h6">
+                                65
+                            </p>
+                            <div class="card-footer h-100">
+                                <h5 >
+                                    event.which and event.keyCode are (deprecated) in modern browsers. Use .key or .code instead.
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <h5 class="card-header bg-warning text-center">
+                                event.code
+                            </h5>
+                            <p id="code" class="bg-white text-center py-4 h6">
+                                keyA
+                            </p>
+                            <div class="card-footer h-100">
+                                <h5 >
+                                    The physical key on the keyboard. Doesn't care if you are holding a modifier like Shift.
+                                </h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="javascript/Script.js"></script>
+<script src="javascript/bootstrap.bundle.min.js"></script>
+</body>
+</html>
