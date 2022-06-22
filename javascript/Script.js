@@ -12,6 +12,7 @@ mobileShow.value=''
 body.addEventListener('keydown',show_details)
 mobileShow.addEventListener('keydown',show_details)
 function show_details(event) {
+    event.preventDefault()
     mobileShow2.value=''
     titleTag.style.display='none'
     CardGroupTag.style.display='flex'
